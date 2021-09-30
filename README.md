@@ -1,4 +1,4 @@
-# My Leet Code Solution Examples
+# My LeetCode Solution Examples
 
 Many posted solutions on leetcode are with improper style or logic, making them less readable.
 
