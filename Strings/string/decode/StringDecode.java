@@ -1,7 +1,7 @@
 package string.decode;
 
 /**
-* This is a problem from one OA.
+* This is a problem from one coding challenge.
 * 
 * Use number 1 - 26 to represent 'a' - 'z';
 *
