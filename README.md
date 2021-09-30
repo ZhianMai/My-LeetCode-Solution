@@ -55,3 +55,10 @@ This repo is a collection of some of my leetcode solutions. They will
 - ### Stack & Queue/EatingLunch.java
   :link:[link](Stack%20%26%20Queue/EatingLunch.java)
 - The input are data in a stack and a queue, and it's interesting to solve this probelm without using a stack or a queue. If use a stack and a queue, the runtime would be O(n^2) and space would be O(n). But now the runtime is O(n) and space is O(1)!
+
+
+<br />
+
+- ### DFS/PartitionKSubsets.java
+  :link:[link](DFS/PartitionKSubsets.java)
+- Efficient DFS logic can significantly reduce the runtime.
