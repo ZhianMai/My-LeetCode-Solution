@@ -8,6 +8,7 @@
 *
 * I implemented two ways to record current results: fixed-size array and ArrayList.
 * I fixed k = 2, and if n < 7000, ArrayList is faster; if n > 7000, int[] is much faster!
+* Different pc should have different performance threshold.
 *
 * So the runtime shown on Leetcode does not mean a lot.
 */
