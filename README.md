@@ -36,3 +36,15 @@ This repo is a collection of some of my leetcode solutions. They will
 - ### DP/MinimumCostCuttingStick.java
 
 - This should be considred one of the most difficult problems in DP problem set! The main logic code has only 15 lines, but the comments are twice of it.
+
+<br />
+
+- ### Strings/LongestPalindromicSubstring.java
+
+- Check odd and even length of substring at the same time by specifying the begin & end index of substring.
+
+<br />
+
+- ### Strings/string/
+
+- It's a problem form a coding challenge. Since I cannot access the original platform anymore, so I implemented it and provided Junit testing.
