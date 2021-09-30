@@ -15,7 +15,8 @@ This repo is a collection of some of my leetcode solutions. They will
 
 <br />
 
-- ### DFS/JumpGameIII.java
+- ### DFS/JumpGameIII.java :link:[link](DFS/JumpGameIII.java)
+
 
 - One of my favorite solutions! In general, it needs a boolean[] to record what elements has been visited, but I recorded the visited elements by making it negative instead of using a boolean[] array. Since the DFS needs to add and minus current element, so its mathematical symbol (+ or -) doesn't matter!
 
