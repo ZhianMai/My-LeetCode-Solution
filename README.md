@@ -1,4 +1,4 @@
-# My LeetCode Solution Examples (Java)
+# My LeetCode Sample Solutions (Java)
 
 Many posted solutions on leetcode are with improper style or logic, making them less readable.
 
