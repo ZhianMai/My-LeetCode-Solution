@@ -19,5 +19,14 @@ This repo is a collection of some of my leetcode solutions. They will
 
 - One of my favorite solutions! In general, it needs a boolean[] to record what elements has been visited, but I recorded the visited elements by making it negative instead of using a boolean[] array. Since the DFS needs to add and minus current element, so its mathematical symbol (+ or -) doesn't matter!
 
+<br />
 
+- ### DFS/CombinationSizeK.java
 
+- For solving fixed-length output problems using back-tracking method, I prefer to use Java array, which is fixed-size, instead of mutable class, such as StringBuilder and List. I implemented using Java array methods and using ArrayList methods. On my computer, for fixed k = 2, the performance threshold is n = 6200. Once n beyond 6200, the ArrayList method would significantly slow down, despite the fact that their runtime O() is the same.
+
+<br />
+
+- ### DFS/GeneratingParentheses.java
+
+- Yes, I like DFS problem! I did not use StringBuilder here, and the total lines of code is only 13. It's easier to read and maintain. Since it gets rid of append-remove, the dfs method needs to know which index (or the depth of recursion tree) is currently traversing.
