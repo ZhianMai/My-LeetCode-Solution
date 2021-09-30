@@ -28,7 +28,7 @@ class EatingLunch {
   }
   
   // This is the second solutions. It's very short, and I wrote it just for fun.
-  // Not recommend this one, since not readable, maintainable, and scalable!
+  // Not recommend this one, since not readable, maintainable, or scalable!
   public int countStudentsB(int[] students, int[] sandwiches) {
     int[] wants = new int[2];
 
