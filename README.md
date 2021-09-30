@@ -54,3 +54,11 @@ This repo is a collection of some of my leetcode solutions. They will
   :link:[link](Strings/string/decode)
   
 - It's a problem form a coding challenge. Since I cannot access the original platform anymore, so I implemented it and provided Junit testing.
+
+<br />
+
+- ### Stack & Queue/EatingLunch.java
+  :link:[link](Stack%20%26%20Queue/EatingLunch.java)
+  
+- It'
+Stack%20%26%20Queue/EatingLunch.java
