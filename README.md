@@ -30,3 +30,9 @@ This repo is a collection of some of my leetcode solutions. They will
 - ### DFS/GeneratingParentheses.java
 
 - Yes, I like DFS problem! I did not use StringBuilder here, and the total lines of code is only 13. It's easier to read and maintain. Since it gets rid of append-remove, the dfs method needs to know which index (or the depth of recursion tree) is currently traversing.
+
+<br />
+
+- ### DP/MinimumCostCuttingStick.java
+
+- This should be considred one of the most difficult problems in DP problem set! The main logic code has only 15 lines, but the comments are twice of it.
