@@ -9,14 +9,14 @@ This repo is a collection of some of my leetcode solutions. They will
 
 ## Highlited Solutions
 
-- ### BinarySearch/BinarySearch.java  :link:[link](Binary%20Tree/BinaryTreeRightSideView.java)
-
+- ### BinarySearch/BinarySearch.java 
+- :link:[link](Binary%20Tree/BinaryTreeRightSideView.java)
 - I included four ways to write binary search on a sorted array, and I consider that these four ways are "Design Pattern" for most of the binary search problems, such as first occurrence, last occurrence, first smallest larger than target, last largest smaller than target...
 
 <br />
 
-- ### DFS/JumpGameIII.java :link:[link](DFS/JumpGameIII.java)
-
+- ### DFS/JumpGameIII.java 
+- :link:[link](DFS/JumpGameIII.java)
 
 - One of my favorite solutions! In general, it needs a boolean[] to record what elements has been visited, but I recorded the visited elements by making it negative instead of using a boolean[] array. Since the DFS needs to add and minus current element, so its mathematical symbol (+ or -) doesn't matter!
 
