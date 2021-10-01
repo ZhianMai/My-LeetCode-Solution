@@ -77,7 +77,7 @@ The solutions below are my favorite or representative for solving similar proble
   - Pre-order and in-order. Get the node value from pre-order, than use it to split left children node set and right children node set from in-order. Tree can be built because two requirements are met.
   - Post-order and in-order. Very similiar to the pre-order and in-order.
   - Pre-order/Post-order and level-order. It's impossible, because the left and right children set cannot be obtained from them.
-  - Level-order and in-order. Get the value of current node value, than use it to split left children node set and right children node set from in-order. Then use the children set to split level-order traversal into left children level-order and right children level-order traversal. <b>The current level-order traversal is merged by left children level-order and right children level-order traversal.</b>
+  - Level-order and in-order. Get the value of current node value, than use it to split left children node set and right children node set from in-order. Then use the children set to split level-order traversal into left children level-order and right children level-order traversal. <b>The current level-order traversal is merged from left children level-order and right children level-order traversal.</b>
 
 - To build binary search tree with:
   - In-order traversal only. It cannot confirm the current value of the node, since it's a sorted array :(
