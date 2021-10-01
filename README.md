@@ -42,6 +42,18 @@ These two questions are very similiar to answer:
 
 <br />
 
+- ### BinarySearch/MountainArraySearch.java 
+  :link:[link](Binary%20Search/MountainArraySearch.java)
+- Is binary search can only apply to sorted array? I don't think so. Like the library book problem: there is an unscaned book in a group of scanned book, how to find it out with fewest scan. Is the book "sorted"? If it's not, why can it use binary search? 
+- There existes an element a[i] in an array a[n], such that for all elements a[j] in a[n], if it can exclude at least ONE of the three situations recursively:
+  - i == j;
+  - i < j;
+  - i > j.  
+
+- then element a[i] can use be found in a[n] using binary search.
+
+<br />
+
 - ### DFS/JumpGameIII.java 
   :link:[link](DFS/JumpGameIII.java)
 - One of my favorite solutions! In general, it needs a boolean[] to record what elements has been visited, but I marked the visited elements by flipping it negative instead of using a boolean[] array. Since the DFS needs to add and minus current element, so its mathematical symbol (+ or -) doesn't matter!
