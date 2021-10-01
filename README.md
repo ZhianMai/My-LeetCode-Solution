@@ -62,3 +62,10 @@ This repo is a collection of some of my leetcode solutions. They will
 - ### DFS/PartitionKSubsets.java
   :link:[link](DFS/PartitionKSubsets.java)
 - Efficient DFS logic can significantly reduce the runtime.
+
+<br />
+
+- ### Arrays/ContainerWithMostWater.java
+  :link:[link](Arrays/ContainerWithMostWater.java)
+- I got this problem on the Leetcode mock OA. It's hard to believe I could use greedy algorithm to solve this problem within the time limit. But the most difficult part is to prove its correctness.
+- Suppose the solution is (arr[i], arr[j]), then there is no arr[h] such that h < i && arr[h] > arr[i]; and there is no arr[k] such that k > j && arr[j] < arr[k] neither, otherwise (arr[i], arr[j]) is not the solution. So using greedy algorithm to shrink left and right pointer, it would eventually reach index i and j by left and right pointer. 
