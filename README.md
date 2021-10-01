@@ -36,7 +36,7 @@ These two questions are very similiar to answer:
 - I included four ways to write binary search on a sorted array:
   - while (left <= right)
   - while (left < right)
-  - while (left < right) with mid += (right - left) % 2
+  - while (left < right), with mid += (right - left) % 2
   - while (left < right - 1)
 - I consider that these four ways are "Design Pattern" for most of the binary search problems, such as first occurrence, last occurrence, first smallest larger than target, last largest smaller than target...
 
