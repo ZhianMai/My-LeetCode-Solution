@@ -4,7 +4,7 @@ Many posted solutions on leetcode are with improper style or logic, making them 
 
 This repo is a collection of some of my leetcode solutions. They will:
 * follow the Google Java Coding style guide (yes, indentation +2 spaces);
-* follw some items (rules) which are for general-purpose in the book <i>Effective Java</i>, such as:
+* follw some items (rules) in the book <i>Effective Java</i>, such as:
   * class name should be norn, whereas function name should be verb;
   * single method for single functionality;
   * function parameter list should not be too long;
