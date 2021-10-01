@@ -23,7 +23,7 @@ I also appreciate Uncle Bob's saying: <i>good code can be understood without com
 
 ### Follow-ups for problems
 For each solution, try to answer two follow-ups:
-* How to run this solution with a lot of data (1TB) on a PC which has limited memory (100MB)?
+* How to run this solution with a lot of input data (1TB) on a PC which has limited memory (100MB)?
 * How ro run this solution on a distributed cluster, like a leading node distribute work to many worker nodes?
 
 These two questions are very similiar to answer: 
@@ -34,6 +34,7 @@ These two questions are very similiar to answer:
 <br />
 
 ## Highlited Solutions
+The solutions below are my favorite or representative for solving similar problems. I may provide some analysis or thought for some of them.
 
 - ### BinarySearch/BinarySearch.java 
   :link:[link](Binary%20Search/BinarySearch.java)
