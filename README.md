@@ -84,3 +84,8 @@ But... this book is very thick, so I may violate some rules unintentionaly :(
   :link:[link](DP/LongestCommonSubsequence.java)
 - This is a 2-D array DP, but I optimize it to Space O(m) by using mod operation to alternate two 1-D arrays. The similiar problem edit distance can also be optimized in this way.
 
+<br />
+
+- ### DFS/NQueens.java
+  :link:[link](DFS/NQueens.java)
+- N-queens, the most complicated problems I have had in LeetCode.
