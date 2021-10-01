@@ -55,7 +55,7 @@ The solutions below are my favorite or representative for solving similar proble
   - i < j;
   - i > j.  
 
-- then element a[i] can use be found in a[n] using binary search.
+- then element a[i] can be found in a[n] using binary search.
 
 <br />
 
