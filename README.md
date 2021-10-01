@@ -59,6 +59,32 @@ The solutions below are my favorite or representative for solving similar proble
 
 <br />
 
+- ### Binary Tree/PreorderInorderBuildingTree.java
+  :link:[link](Binary%20Tree/PreorderInorderBuildingTree.java)
+- This is one of the tree deserializing problem. Similiar problems are:
+  - select two from in-order, pre-order, post-order, and level-order traversal to build binary tree;
+  - select one from four types of traversal to build binary search tree.
+
+- I summarize the rules of solving tree deserializing problems.
+  - To build a tree, if for each tree node, one can confirm: <b>its value, AND the sets of node for its left and right children</b>, then the tree can be constructed.
+  - In-order traversal can confirm the value of current node, which is the first element, but cannot confirm sets of left and right children. But if given the size of left or right children, then it can confirm the set of left and right children.
+  - In-order traversal cannot confirm the value of current node. But if given the value of current node, it can confirm the set of left and right children.
+  - Post-order traversal is similar to in-order traversal.
+  - Level-order traversal can confirm the value of current node but cannot confirm the sets of left and right children node. But if provide a list of left or children nodes, then it can divide into left children level-order traversal and right children level-order traversal. This is the most difficult one of all tree desrializing problems.
+
+- To build binary tree (including binary search tree) with:
+  - Pre-order and post-order. It cannot confirm each nodes left and right children sets, so the solution is not unique. Example: linked-list style tree has same in-order and post-order.
+  - Pre-order and in-order. Get the node value from pre-order, than use it to split left children node set and right children node set from in-order. Tree can be built because two requirements are met.
+  - Post-order and in-order. Very similiar to the pre-order and in-order.
+  - Pre-order/Post-order and level-order. It's impossible, because the left and right children set cannot obtain from them.
+  - Level-order and in-order. Get the value of current node value, than use it to split left children node set and right children node set from in-order. Then use the children set to split level-order traversal into left children level-order and right children level-order. <b>The current level-order traversal is merged by left children level-order and right children level-order traversal.</b>
+
+- To build binary search tree with:
+  - In-order traversal only. It cannot confirm the current value of the node, since it's a sorted array :(
+  - Pre-order, post-order, or level-order only. Recall the most important property of binary search tree: <b>for each node in binary search tree, all nodes in its left subtree are smaller than its value, and all nodes in its right subtree are larger than its value.</b> So the current root value can be obtained from any of these traversals, then use the BST property to split it into left and right subtree xx-order traversal.
+
+<br/>
+
 - ### DFS/JumpGameIII.java 
   :link:[link](DFS/JumpGameIII.java)
 - One of my favorite solutions! In general, it needs a boolean[] to record what elements has been visited, but I marked the visited elements by flipping it negative instead of using a boolean[] array. Since the DFS needs to add and minus current element, so its mathematical symbol (+ or -) doesn't matter!
@@ -127,31 +153,6 @@ The solutions below are my favorite or representative for solving similar proble
   :link:[link](DFS/NQueens.java)
 - N-queens, the most complicated problems I have had on LeetCode.
 
-<br/>
-
-- ### Binary Tree/PreorderInorderBuildingTree.java
-  :link:[link](Binary%20Tree/PreorderInorderBuildingTree.java)
-- This is one of the tree deserializing problem. Similiar problems are:
-  - select two from in-order, pre-order, post-order, and level-order traversal to build binary tree;
-  - select one from four types of traversal to build binary search tree.
-
-- I summarize the rules of solving tree deserializing problems.
-  - To build a tree, if for each tree node, one can confirm: <b>its value, AND the sets of node for its left and right children</b>, then the tree can be constructed.
-  - In-order traversal can confirm the value of current node, which is the first element, but cannot confirm sets of left and right children. But if given the size of left or right children, then it can confirm the set of left and right children.
-  - In-order traversal cannot confirm the value of current node. But if given the value of current node, it can confirm the set of left and right children.
-  - Post-order traversal is similar to in-order traversal.
-  - Level-order traversal can confirm the value of current node but cannot confirm the sets of left and right children node. But if provide a list of left or children nodes, then it can divide into left children level-order traversal and right children level-order traversal. This is the most difficult one of all tree desrializing problems.
-
-- To build binary tree (including binary search tree) with:
-  - Pre-order and post-order. It cannot confirm each nodes left and right children sets, so the solution is not unique. Example: linked-list style tree has same in-order and post-order.
-  - Pre-order and in-order. Get the node value from pre-order, than use it to split left children node set and right children node set from in-order. Tree can be built because two requirements are met.
-  - Post-order and in-order. Very similiar to the pre-order and in-order.
-  - Pre-order/Post-order and level-order. It's impossible, because the left and right children set cannot obtain from them.
-  - Level-order and in-order. Get the value of current node value, than use it to split left children node set and right children node set from in-order. Then use the children set to split level-order traversal into left children level-order and right children level-order. <b>The current level-order traversal is merged by left children level-order and right children level-order traversal.</b>
-
-- To build binary search tree with:
-  - In-order traversal only. It cannot confirm the current value of the node, since it's a sorted array :(
-  - Pre-order, post-order, or level-order only. Recall the most important property of binary search tree: <b>for each node in binary search tree, all nodes in its left subtree are smaller than its value, and all nodes in its right subtree are larger than its value.</b> So the current root value can be obtained from any of these traversals, then use the BST property to split it into left and right subtree xx-order traversal.
 <br/>
 
 ## Epilogue
