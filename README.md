@@ -4,9 +4,10 @@
 ## Prologue
 Consider LeetCode is an online gaming platform!
 
-Many posted solutions on leetcode are with improper style or logic, making them less readable.
+This repo is a collection of some of my leetcode solutions. Many posted solutions on leetcode are with improper style or logic, making them less readable. So I would like to post my solution codes here.
 
-This repo is a collection of some of my leetcode solutions. They will:
+### Rules of code
+They will:
 * follow the Google Java Coding style guide (yes, indentation +2 spaces);
 * follw some items (rules) in the book <i>Effective Java</i>, such as:
   * class name should be norn, whereas function name should be verb;
@@ -20,6 +21,7 @@ But... this book is very thick, so I may violate some rules unintentionaly :(
 
 I also appreciate Uncle Bob's saying: <i>good code can be understood without commenting.</i>
 
+### Follow-ups for problems
 For each solution, try to answer two folow-ups:
 * How to run this solution with a lot of data (1TB) on a PC which has limited memory (100MB)?
 * How ro run this solution on a distributed cluster, like a leading node distribute work to many worker nodes?
