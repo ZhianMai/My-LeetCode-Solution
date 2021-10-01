@@ -1,10 +1,15 @@
-# My LeetCode Sample Solutions (Java)
+# My LeetCode Sample Solutions (in Java)
 
 Many posted solutions on leetcode are with improper style or logic, making them less readable.
 
 This repo is a collection of some of my leetcode solutions. They will
 * follow the Google Java Coding style guide (yes, indentation +2 spaces);
-* be optimal solutions, but if the optimal solution is hard to read and understand, then I may discard it;
+* follw some items (roles) which are for general-purpose in the book <i>Effective Java</i>, such as:
+  * class name should be norn, where function name should be verb;
+  * single method for single functionality;
+  * function parameter list should not be too long.
+  But..
+* be optimal solutions for runtime first, then for memory. But if the optimal solution is hard to read and understand, I may discard it;
 * be easy to read and understand with clear logic.
 
 ## Highlited Solutions
