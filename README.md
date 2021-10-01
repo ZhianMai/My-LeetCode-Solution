@@ -69,3 +69,11 @@ This repo is a collection of some of my leetcode solutions. They will
   :link:[link](Arrays/ContainerWithMostWater.java)
 - I got this problem on the Leetcode mock OA. It's hard to believe I could come out the greedy algorithm to solve this problem within the time limit. In general, this kind of problem are usually fall into DP category. But the most difficult part is to prove its correctness.
 - Suppose the solution is (arr[i], arr[j]), then there is no arr[h] such that h < i && arr[h] > arr[i]; and there is no arr[k] such that k > j && arr[j] < arr[k] neither, otherwise (arr[i], arr[j]) is not the solution. So using greedy algorithm to shrink left and right pointer, it would eventually reach index i and j by left and right pointer. 
+
+
+<br />
+
+- ### DP/LongestCommonSubsequence.java
+  :link:[link](DP/LongestCommonSubsequence.java)
+- This is a 2-D array DP, but I optimize it to Space O(m) by using mod operation to alternate two 1-D arrays. The similiar problem edit distance can also be optimized in this way.
+
