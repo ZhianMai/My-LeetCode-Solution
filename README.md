@@ -23,7 +23,7 @@ This repo is a collection of some of my leetcode solutions. They will
 
 - ### DFS/CombinationSizeK.java
   :link:[link](DFS/CombinationSizeK.java)
-- For solving fixed-length output problems using back-tracking method, I prefer to use Java array, which is fixed-size, instead of mutable class, such as StringBuilder and List. I implemented it using Java array methods and using ArrayList methods. On my computer, for fixed k = 2, the performance threshold is n = 6200. Once n beyond 6200, the ArrayList method would significantly slow down, despite the fact that their runtime O() is the same.
+- For solving fixed-length output problems using back-tracking method, I prefer to use Java array, which is fixed-size, instead of mutable class, such as StringBuilder and List. I implemented it using both Java array methods and using ArrayList methods for performance testing. On my computer, for fixed k = 2, the performance threshold is n = 6200. Once n beyond 6200, the ArrayList method would significantly slow down, despite the fact that their runtime O() is the same.
 
 <br />
 
