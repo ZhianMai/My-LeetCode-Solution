@@ -98,4 +98,4 @@ These two questions are very similiar to answer:
 
 - ### DFS/NQueens.java
   :link:[link](DFS/NQueens.java)
-- N-queens, the most complicated problems I have had in LeetCode.
+- N-queens, the most complicated problems I have had on LeetCode.
