@@ -16,7 +16,7 @@ But... this book is very thick, so I may violate some rules unintentionaly :(
 
 For each solution, try to answer two folow-ups:
 * How to run this solution with a lot of data (1TB) on a PC which has limited memory (100MB)?
-* How ro run this solution on a distributed cluster, like a leading node distribute work to many worker node?
+* How ro run this solution on a distributed cluster, like a leading node distribute work to many worker nodes?
 
 These two questions are very similiar to answer: 
 
