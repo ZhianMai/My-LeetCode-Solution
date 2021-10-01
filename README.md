@@ -2,7 +2,7 @@
 
 Many posted solutions on leetcode are with improper style or logic, making them less readable.
 
-This repo is a collection of some of my leetcode solutions. They will
+This repo is a collection of some of my leetcode solutions. They will:
 * follow the Google Java Coding style guide (yes, indentation +2 spaces);
 * follw some items (rules) which are for general-purpose in the book <i>Effective Java</i>, such as:
   * class name should be norn, where function name should be verb;
