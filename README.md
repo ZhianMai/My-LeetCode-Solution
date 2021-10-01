@@ -11,7 +11,7 @@ This repo is a collection of some of my leetcode solutions. They will:
   * reuse object if possible, etc.
    <br /><br />
 But... this book is very thick, so I may violate some rules unintentionaly :(
-* be optimal solutions for runtime first, then for memory. But if the optimal solution is hard to read and understand, I may discard it;
+* be optimized for runtime first, then for memory usage. But if the optimized solution is hard to read and understand, I may discard it;
 * be easy to read and understand with clear logic.
 
 For each solution, try to answer two folow-ups:
