@@ -105,5 +105,7 @@ These two questions are very similiar to answer:
   :link:[link](DFS/NQueens.java)
 - N-queens, the most complicated problems I have had on LeetCode.
 
+<br/>
+
 ## Epilogue
 Failure is like compile/runtime error, often comes firest before success submission. If the first pass get success, then it means the problem is very simple or I'm well-prepared. But all I need is that one success, and once I got it, the number of failure won't borther me anymore. Not being allowed to join the top level class does not mean my skill does not reach the top level forever, right?
