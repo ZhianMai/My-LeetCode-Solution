@@ -5,7 +5,7 @@ Many posted solutions on leetcode are with improper style or logic, making them 
 This repo is a collection of some of my leetcode solutions. They will
 * follow the Google Java Coding style guide (yes, indentation +2 spaces);
 * be optimal solutions, but if the optimal solution is hard to read and understand, then I may discard it;
-* be easy to read with clear logic.
+* be easy to read and understand with clear logic.
 
 ## Highlited Solutions
 
