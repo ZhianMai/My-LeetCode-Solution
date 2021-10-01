@@ -65,7 +65,7 @@ The solutions below are my favorite or representative for solving similar proble
   - select two from in-order, pre-order, post-order, and level-order traversal to build binary tree;
   - select one from four types of traversal to build binary search tree.
 
-- I summarize the rules of solving tree deserializing problems.
+- I summarized the rules of solving tree deserializing problems.
   - To build a tree, if for each tree node, one can confirm: <b>its value, AND the sets of node for its left and right children</b>, then the tree can be constructed.
   - In-order traversal can confirm the value of current node, which is the first element, but cannot confirm sets of left and right children. But if given the size of left or right children, then it can confirm the set of left and right children.
   - In-order traversal cannot confirm the value of current node. But if given the value of current node, it can confirm the set of left and right children.
