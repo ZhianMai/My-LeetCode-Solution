@@ -18,7 +18,7 @@ But... this book is very thick, so I may violate some rules unintentionaly :(
 * be optimized for runtime first, then for memory usage. But if the optimized solution is hard to read and understand, I may discard it;
 * be easy to read and understand with clear logic.
 
-I also appreciate Robert C. Martin's saying: good code can understand without commenting.
+I also appreciate Uncle Bob's saying: good code can understand without commenting.
 
 For each solution, try to answer two folow-ups:
 * How to run this solution with a lot of data (1TB) on a PC which has limited memory (100MB)?
