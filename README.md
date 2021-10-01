@@ -14,6 +14,16 @@ But... this book is very thick, so I may violate some rules unintentionaly :(
 * be optimal solutions for runtime first, then for memory. But if the optimal solution is hard to read and understand, I may discard it;
 * be easy to read and understand with clear logic.
 
+For each solution, try to answer two folow-ups:
+* How to run this solution with a lot of data (1TB) on a PC which has limited memory (100MB)?
+* How ro run this solution on a distributed cluster, like a leading node distribute work to many worker node?
+
+These two questions are very similiar to answer: 
+
+* Which part of the solution can run in parallel or multi-threaded?
+* If this part of the solution cannot run in parallel due to consistent state transfer, is it possible to change to parallelable implementation, like binary reduction, or k-way merge using heap?
+* If this part of the solution can run in parallel, how to minimize data transfer? 
+
 ## Highlited Solutions
 
 - ### BinarySearch/BinarySearch.java 
