@@ -67,7 +67,7 @@ The solutions below are my favorite or representative for solving similar proble
 
 - I summarized the rules of solving tree deserializing problems.
   - To build a tree, if for each tree node, one can confirm: <b>its value, AND the sets of node for its left and right children</b>, then the tree can be constructed.
-  - In-order traversal can confirm the value of current node, which is the first element, but cannot confirm sets of left and right children. But if given the size of left or right children, then it can confirm the set of left and right children.
+  - Pre-order traversal can confirm the value of current node, which is the first element, but cannot confirm sets of left and right children. But if given the size of left or right children, then it can confirm the set of left and right children.
   - In-order traversal cannot confirm the value of current node. But if given the value of current node, it can confirm the set of left and right children.
   - Post-order traversal is similar to in-order traversal.
   - Level-order traversal can confirm the value of current node but cannot confirm the sets of left and right children node. But if provide a list of left or children nodes, then it can divide into left children level-order traversal and right children level-order traversal. This is the most difficult one of all tree desrializing problems.
