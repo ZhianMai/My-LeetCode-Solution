@@ -8,7 +8,7 @@ This repo is a collection of some of my leetcode solutions. They will:
   * class name should be norn, whereas function name should be verb;
   * single method for single functionality;
   * function parameter list should not be too long;
-  * reuse object if possible.
+  * reuse object if possible, etc.
    <br /><br />
 But... this book is very thick, so I may violate some rules unintentionaly :(
 * be optimal solutions for runtime first, then for memory. But if the optimal solution is hard to read and understand, I may discard it;
