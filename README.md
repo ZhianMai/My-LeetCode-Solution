@@ -7,7 +7,9 @@ This repo is a collection of some of my leetcode solutions. They will:
 * follw some items (rules) which are for general-purpose in the book <i>Effective Java</i>, such as:
   * class name should be norn, where function name should be verb;
   * single method for single functionality;
-  * function parameter list should not be too long. <br /><br />
+  * function parameter list should not be too long;
+  * reuse object if possible.
+   <br /><br />
 But... this book is very thick, so I may violate some rules unintentionaly :(
 * be optimal solutions for runtime first, then for memory. But if the optimal solution is hard to read and understand, I may discard it;
 * be easy to read and understand with clear logic.
