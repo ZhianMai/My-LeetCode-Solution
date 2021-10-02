@@ -47,6 +47,13 @@ The solutions below are my favorite or representative for solving similar proble
   - while (left < right - 1)
 - I consider that these four ways are "Design Pattern" for most of the binary search problems, such as first occurrence, last occurrence, first smallest larger than target, last largest smaller than target...
 
+When coding binary search, always remember three rules:
+  - On each iteration, the search space should reduce half. But exceptions may apply, like problem "Search first occurence minimum in mountain array", which includes left++ or right-- insead of left = ...
+  - In situation when doing left = mid + 1 or right = mid - 1, do not accidently exclude the target.
+  - When the search space is about to exit the while loop, make sure it won't fall into infinite loop by testing:
+    - no such target;
+    - target placed at each index. 
+  
 <br />
 
 - ### BinarySearch/MountainArraySearch.java 
