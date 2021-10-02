@@ -33,6 +33,8 @@ These two questions are very similiar to answer:
 * If this part of the solution can run in parallel, how to minimize data transfer? 
 <br />
 
+I used to take notes on Google doc[link](https://docs.google.com/document/d/19Kqqg7O1uSLHrBmcvUBuL8otUgsI0nNc3m3-W3wviXI/edit?usp=sharing), but that was not a very good choice, since it does not support code block. So I moved some of my notes to here.
+
 ## Highlited Solutions
 The solutions below are my favorite or representative for solving similar problems. I may provide some analysis or thought for some of them.
 
