@@ -6,7 +6,7 @@ Consider LeetCode is an online gaming platform! Players are smart guys around th
 
 This repo is a collection of some of my leetcode solutions. Many posted solutions on leetcode are with improper style or logic, making them less readable. So I would like to post my solution codes here.
 
-### Rules of code
+### Rules for code
 My solution code will:
 * follow the Google Java Coding style guide (yes, indentation +2 spaces);
 * follw some items (rules) in the book <i>Effective Java</i>, such as:
