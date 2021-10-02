@@ -62,7 +62,7 @@ The solutions below are my favorite or representative for solving similar proble
 - ### Binary Tree/MultipleNodesDeletion.java
   :link:[link](Binary%20Tree/MultipleNodesDeletion.java)
 - This is the most difficult tree recursion problem I have solved. In general, for solving tree-recursion problem, one needs to figure out:
-  - For current layer, what do I get from parent node?
+  - For current node, what do I get from parent node?
   - What should I do?
   - What should I pass to children node? 
 - It seems that many such problems using post-order traversal is easier than pre-order traversal.
