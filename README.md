@@ -4,7 +4,7 @@
 ## Prologue
 Consider LeetCode is an online gaming platform! Players are smart guys around the world, and the fun is to compete them on runtime ranking.
 
-This repo is a collection of some of my leetcode solutions. Many posted solutions on leetcode are with improper style or logic, making them less readable. So I would like to post my solution codes here.
+This repo is a collection of some of my leetcode solutions. Many posted solutions on leetcode are with improper style or logic, making them less readable. So I would like to share my solution codes here.
 
 ### Rules for code
 My solution code will:
