@@ -24,7 +24,7 @@ I also appreciate Uncle Bob's saying: <i>good code can be understood without com
 ### Follow-ups for problems
 For each solution, try to answer two follow-ups:
 * How to run this solution with a lot of input data (1TB) on a PC which has limited memory (100MB)?
-* How ro run this solution on a distributed cluster, like a leading node distribute work to many worker nodes?
+* How ro run this solution on a distributed cluster, like a leading node distributing work to many worker nodes?
 
 These two questions are very similiar to answer: 
 
