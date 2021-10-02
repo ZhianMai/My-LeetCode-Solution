@@ -60,12 +60,12 @@ class MultipleNodesDeletion {
 
       if (root.left != null) {
         forest.add(root.left);
-        root.left = null;
+        // root.left = null;
       }
 
       if (root.right != null) {
         forest.add(root.right);
-        root.right = null;
+        // root.right = null;
       }
     }
 
