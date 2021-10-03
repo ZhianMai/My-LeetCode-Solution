@@ -179,6 +179,8 @@ When coding binary search, always remember three rules:
 - ### DP/JumpGame.java
   :link:[link](DP/JumpGame.java)
 - This is a very good example for DP "reverse-engineering" thinking. Solving this problem can use either top-down or bottom-up DP method.
+- Greedy method can also solve this problem, and it has both top-down or bottom-up methods as well.
+- I included four ways to solve this problem.
 
 <br/>
 
