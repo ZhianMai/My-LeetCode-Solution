@@ -11,7 +11,7 @@ class SuperEggDrop {
       return 0;
     } else if (k == 1) { // Only one egg left, linearly try.
       return n;
-    }else if (dp[k][n]!= 0) { // Result exists.
+    } else if (dp[k][n]!= 0) { // Result exists.
       return dp[k][n];
     }
 
