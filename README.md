@@ -157,6 +157,7 @@ When coding binary search, always remember three rules:
 #### DFS/NQueens.java
   :link:[link](DFS/NQueens.java)
 - N-queens, the most complicated problems I have had on LeetCode.
+- Use boolean tables to mark down placed queen position to support O(1) look up when placing new queen.
 
 <br/>
 
