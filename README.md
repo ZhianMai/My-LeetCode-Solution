@@ -38,7 +38,22 @@ I used to take notes on Google doc :link:[link](https://docs.google.com/document
 ## Highlited Solutions
 The solutions below are my favorite or representative for solving similar problems. I may provide some analysis or thought for some of them.
 
-- ### BinarySearch/BinarySearch.java 
+* [Binary Search](#binary_search)
+* [Binary Tree](#binary_tree)
+* [DFS](#d_f_s)
+* [DP](#d_p)
+* [Stack & Queue](#stack_and_queue)
+* [Arrays](#array_s)
+* [Strings](#string_s)
+* [Linked List](#linked_list)
+
+<br />
+
+<a name="binary_search"></a>
+### Binary Search
+<hr />
+
+#### BinarySearch/BinarySearch.java 
   :link:[link](Binary%20Search/BinarySearch.java)
 
 I included four ways to write binary search on a sorted array:
@@ -58,7 +73,7 @@ When coding binary search, always remember three rules:
   
 <br />
 
-- ### BinarySearch/MountainArraySearch.java 
+#### BinarySearch/MountainArraySearch.java 
   :link:[link](Binary%20Search/MountainArraySearch.java)
 - Is binary search can only apply to sorted array? I don't think so. Like the library book problem: there is an unscaned book in a group of scanned book, how to find it out with fewest scan. Is the book "sorted"? If it's not, why can it use binary search? 
 - There existes an element a[i] in an array a[n], such that for all elements a[j] in a[n], if it can exclude at least ONE of the three situations recursively:
@@ -70,7 +85,11 @@ When coding binary search, always remember three rules:
 
 <br />
 
-- ### Binary Tree/MultipleNodesDeletion.java
+<a name="binary_tree"></a>
+### Binary Tree
+<hr />
+
+#### Binary Tree/MultipleNodesDeletion.java
   :link:[link](Binary%20Tree/MultipleNodesDeletion.java)
 - This is the most difficult tree recursion problem I have solved. In general, for solving tree-recursion problem, one needs to figure out:
   - For current node, what do I get from parent node?
@@ -80,7 +99,7 @@ When coding binary search, always remember three rules:
 
 <br />
 
-- ### Binary Tree/PreorderInorderBuildingTree.java
+#### Binary Tree/PreorderInorderBuildingTree.java
   :link:[link](Binary%20Tree/PreorderInorderBuildingTree.java)
 - This is one of the tree deserializing problems. Similiar problems are:
   - select two from in-order, pre-order, post-order, and level-order traversal to build binary tree;
@@ -106,77 +125,57 @@ When coding binary search, always remember three rules:
 
 <br/>
 
-- ### DFS/JumpGameIII.java 
+<a name="d_f_s"></a>
+### DFS
+<hr />
+
+#### DFS/JumpGameIII.java 
   :link:[link](DFS/JumpGameIII.java)
 - One of my favorite solutions! In general, it needs a boolean[] to record what elements has been visited, but I marked the visited elements by flipping it negative instead of using a boolean[] array. Since the DFS needs to add and minus current element, so its mathematical symbol (+ or -) doesn't matter!
 
 <br />
 
-- ### DFS/CombinationSizeK.java
+#### DFS/CombinationSizeK.java
   :link:[link](DFS/CombinationSizeK.java)
 - For solving fixed-length output problems using back-tracking method, I prefer to use Java array, which is fixed-size, instead of mutable class, such as StringBuilder and List. I implemented it using both Java array methods and using ArrayList methods for performance testing. On my computer, for fixed k = 2, the performance threshold is n = 6200. Once n beyond 6200, the ArrayList method would significantly slow down, despite the fact that their runtime O() is the same.
 
 <br />
 
-- ### DFS/GeneratingParentheses.java
+#### DFS/GeneratingParentheses.java
   :link:[link](DFS/GeneratingParentheses.java)
 - Yes, I like DFS problem! I did not use StringBuilder here, and the total lines of code is only 13. It's easier to read and maintain. Since it gets rid of append-remove, the dfs method needs to know which index (or the depth of recursion tree) is currently traversing.
 
 <br />
 
-- ### DP/MinimumCostCuttingStick.java
-  :link:[link](DP/MinimumCostCuttingStick.java)
-- This should be considred one of the most difficult problems in DP problem set! The main logic code has only 15 lines, but the comments are twice of it.
-
-<br />
-
-- ### Strings/LongestPalindromicSubstring.java
-  :link:[link](Strings/LongestPalindromicSubstring.java)
-- Check odd and even length of substring at the same time by specifying the begin & end index of substring.
-
-<br />
-
-- ### Strings/string/
-  :link:[link](Strings/string/decode)
-  
-- It's a problem form a coding challenge. Since I cannot access the original platform anymore, so I implemented it and provided Junit testing.
-
-<br />
-
-- ### Stack & Queue/EatingLunch.java
-  :link:[link](Stack%20%26%20Queue/EatingLunch.java)
-- The input are data in a stack and a queue, and it's interesting to solve this probelm without using a stack or a queue. If using a stack and a queue, the runtime would be O(n^2) and space would be O(n). But now the runtime is O(n) and space is O(1)!
-
-
-<br />
-
-- ### DFS/PartitionKSubsets.java
+#### DFS/PartitionKSubsets.java
   :link:[link](DFS/PartitionKSubsets.java)
 - Efficient DFS logic can significantly reduce the runtime.
 
 <br />
 
-- ### Arrays/ContainerWithMostWater.java
-  :link:[link](Arrays/ContainerWithMostWater.java)
-- I got this problem on the Leetcode mock OA. It's hard to believe I could come out the greedy algorithm to solve this problem within the time limit. In general, this kind of problem are usually fall into DP category. But the most difficult part is to prove its correctness.
-- Suppose the solution is (arr[i], arr[j]), then there is no arr[h] such that h < i && arr[h] > arr[i]; and there is no arr[k] such that k > j && arr[j] < arr[k] neither, otherwise (arr[i], arr[j]) is not the solution. So using greedy algorithm to shrink left and right pointer, it would eventually reach index i and j by left and right pointer. 
-
-
-<br />
-
-- ### DP/LongestCommonSubsequence.java
-  :link:[link](DP/LongestCommonSubsequence.java)
-- This is a 2-D array DP, but I optimize it to Space O(m) by using mod operation to alternate two 1-D arrays. The similiar problem edit distance can also be optimized in this way.
-
-<br />
-
-- ### DFS/NQueens.java
+#### DFS/NQueens.java
   :link:[link](DFS/NQueens.java)
 - N-queens, the most complicated problems I have had on LeetCode.
 
 <br/>
 
-- ### DP/JumpGame.java
+<a name="d_p"></a>
+### DP
+<hr />
+
+#### DP/MinimumCostCuttingStick.java
+  :link:[link](DP/MinimumCostCuttingStick.java)
+- This should be considred one of the most difficult problems in DP problem set! The main logic code has only 15 lines, but the comments are twice of it.
+
+<br />
+
+#### DP/LongestCommonSubsequence.java
+  :link:[link](DP/LongestCommonSubsequence.java)
+- This is a 2-D array DP, but I optimize it to Space O(m) by using mod operation to alternate two 1-D arrays. The similiar problem edit distance can also be optimized in this way.
+
+<br />
+
+#### DP/JumpGame.java
   :link:[link](DP/JumpGame.java)
 - This is a very good example for DP "reverse-engineering" thinking. Solving this problem can use either top-down or bottom-up DP method.
 - Greedy method can also solve this problem, and it has both top-down or bottom-up methods as well.
@@ -184,5 +183,54 @@ When coding binary search, always remember three rules:
 
 <br/>
 
+#### DP/DungeonGame.java
+  :link:[link](DP/DungeonGame.java)
+- This is another very good example for DP "reverse-engineering" thinking that the DP form is filled in bottom-up order. If one wants to fill DP form out in top-down order, then dp[i][j] means "Minimum DP needed to reach matrix[i][j] from matrix[0][0]", and I don't think there exists such a transition function. But if to fill DP form out in bottom-up order, then dp[i][j] means "Minimum DP needed to reach matrix[n - 1][m - 1] from matrix[0][0]", and this makes more sense.
+- This problem can reduce the space complexcity to O(1) by using the input matrix as DP table. But modifying the input data is not a good practice (how if it's immutable?), and the logic is more complicated, since the DP form contains a dummy row and dummy column.
+
+<br/>
+
+<a name="stack_and_queue"></a>
+### Stack and Queue
+<hr />
+
+#### Stack & Queue/EatingLunch.java
+  :link:[link](Stack%20%26%20Queue/EatingLunch.java)
+- The input are data in a stack and a queue, and it's interesting to solve this probelm without using a stack or a queue. If using a stack and a queue, the runtime would be O(n^2) and space would be O(n). But now the runtime is O(n) and space is O(1)!
+
+<br />
+
+<a name="array_s"></a>
+### Arrays
+<hr />
+
+#### Arrays/ContainerWithMostWater.java
+  :link:[link](Arrays/ContainerWithMostWater.java)
+- I got this problem on the Leetcode mock OA. It's hard to believe I could come out the greedy algorithm to solve this problem within the time limit. In general, this kind of problem are usually fall into DP category. But the most difficult part is to prove its correctness.
+- Suppose the solution is (arr[i], arr[j]), then there is no arr[h] such that h < i && arr[h] > arr[i]; and there is no arr[k] such that k > j && arr[j] < arr[k] neither, otherwise (arr[i], arr[j]) is not the solution. So using greedy algorithm to shrink left and right pointer, it would eventually reach index i and j by left and right pointer. 
+
+<br />
+
+<a name="string_s"></a>
+### Strings
+<hr />
+
+#### Strings/LongestPalindromicSubstring.java
+  :link:[link](Strings/LongestPalindromicSubstring.java)
+- Check odd and even length of substring at the same time by specifying the begin & end index of substring.
+
+<br />
+
+#### Strings/string/
+  :link:[link](Strings/string/decode)
+  
+- It's a problem form a coding challenge. Since I cannot access the original platform anymore, so I implemented it and provided Junit testing.
+
+<br />
+
+<a name="linked_list"></a>
+### Linked List
+<hr />
+
 ## Epilogue
-Failure is like compile/runtime error, often comes first before getting success. If the first pass get success, then it means the problem is very simple or I'm well-prepared. But all I need is that one success, and once I got it, the number of failure won't bother me anymore. Not being allowed to join the top level class does not mean my skill can not reach the top level forever, right?
+Failure is like compile/runtime error, often comes first before getting success. If the first pass get success, then it means the problem is simple or I'm well-prepared. But all I need is that one success, and once I got it, the number of failure won't bother me anymore. Not being allowed to join the top level class does not mean my skill can not reach the top level forever, right?
