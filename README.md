@@ -172,7 +172,7 @@ When coding binary search, always remember three rules:
 
 #### DP/LongestCommonSubsequence.java
   :link:[link](DP/LongestCommonSubsequence.java)
-- This is a 2-D array DP, but I optimize it to Space O(m) by using mod operation to alternate two 1-D arrays. The similiar problem edit distance can also be optimized in this way.
+- This is a 2-D array DP, but I optimize it to Space O(m) by using mod operation to alternate two 1-D arrays. Some similiar problems like edit distance can also be optimized in this way.
 
 <br />
 
