@@ -6,7 +6,7 @@ class LongestCommonSubsequence {
     char[] str1 = text1.toCharArray();
     char[] str2 = text2.toCharArray();
 
-    // If use the 2-D array to fill out, notice that the current row
+    // If use an 2-D array to fill out, notice that the current row
     // is only depends on the previous row.
     // So using two 1-D arrays is enough for this problem.
     
