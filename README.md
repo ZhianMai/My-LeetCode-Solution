@@ -82,7 +82,7 @@ When coding binary search, always remember three rules:
 
 - ### Binary Tree/PreorderInorderBuildingTree.java
   :link:[link](Binary%20Tree/PreorderInorderBuildingTree.java)
-- This is one of the tree deserializing problem. Similiar problems are:
+- This is one of the tree deserializing problems. Similiar problems are:
   - select two from in-order, pre-order, post-order, and level-order traversal to build binary tree;
   - select one from four types of traversal to build binary search tree.
 
