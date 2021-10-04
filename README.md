@@ -238,4 +238,4 @@ When coding binary search, always remember three rules:
 <hr />
 
 ## Epilogue
-Failure is like compile/runtime error, often comes first before getting success. If the first pass get success, then it means the problem is simple or I'm well-prepared. But all I need is that one success, and once I got it, the number of failure won't bother me anymore. Not being allowed to join the top level class does not mean my skill can not reach the top level forever, right?
+Failure is like compile/runtime error, often comes first before getting success. If the first pass get success, then it indicates the problem is simple or I'm well-prepared. But all I need is that one success, and once I got it, the number of failure won't bother me anymore. Not being allowed to join the top level class does not mean my skill can not reach the top level forever, right?
