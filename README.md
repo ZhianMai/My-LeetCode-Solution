@@ -135,7 +135,7 @@ When coding binary search, always remember three rules:
 #### DFS/JumpGameIII.java 
   :link:[link](DFS/JumpGameIII.java)
 - One of my favorite solutions! In general, it needs a boolean[] to record what elements has been visited, but I marked the visited elements by flipping it negative instead of using a boolean[] array. Since the DFS needs to add and minus current element, so its mathematical symbol (+ or -) doesn't matter!
-- Unlike previous jump game, this time the game does not fall into DP category.
+- Unlike previous jump games, this time the game does not fall into DP category.
 
 <br />
 
