@@ -1,6 +1,8 @@
 # My LeetCode Sample Solutions (in Java)
 <br />
 
+![alt text](https://github.com/ZhianMai/MyLeetCodeSolution/blob/main/%E5%81%9A%E9%A2%98.jpg)
+
 ## Prologue
 Consider LeetCode is an online gaming platform! Players are smart guys around the world, and the fun is to compete them on runtime ranking.
 
