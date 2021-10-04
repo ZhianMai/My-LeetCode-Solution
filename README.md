@@ -63,7 +63,7 @@ I included four ways to write binary search on a sorted array:
   - while (left < right), with mid += (right - left) % 2
   - while (left < right - 1)
 
-I consider that these four ways are "Design Pattern" for most of the binary search problems, such as first occurrence, last occurrence, first smallest larger than target, last largest smaller than target...
+I consider that these four ways are "Design Pattern" for most of the binary search problems, such as first occurrence, last occurrence, first smallest larger than target, last largest smaller than target, closest to target...
 
 When coding binary search, always remember three rules:
   - On each iteration, the search space should reduce half. But exceptions may apply, like problem "Search first occurence minimum in mountain array", which includes left++ or right-- inside while loop.
