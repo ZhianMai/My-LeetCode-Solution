@@ -145,6 +145,14 @@ When coding binary search, always remember three rules:
 ### DFS
 <hr />
 
+DFS is usually for solving premutation & combination problems. Most of the time only traversing all possibilities can solve the problem. When solving DFS, the problems below should be addressed:
+- What input is, and what output is.
+- How many levels (how deep) for the DFS recursion tree?
+- Each level has what input, what to do, and what for next DFS call?
+- For the last level, how to verify and store the solutions.
+
+The last level should not do heavy work that requires TC or SC greater than O(n), like using a hashmap to deduplicate, or sorting the result. If so, break these heavy work to all previous level to finish.
+
 #### DFS/JumpGameIII.java 
   :link:[link](DFS/JumpGameIII.java)
 - One of my favorite solutions! In general, it needs a boolean[] to record what elements has been visited, but I marked the visited elements by flipping it negative instead of using a boolean[] array. Since the DFS needs to add and minus current element, so its mathematical symbol (+ or -) doesn't matter!
