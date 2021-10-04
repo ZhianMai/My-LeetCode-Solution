@@ -18,7 +18,7 @@ Memorizing solution codes can hardly bring one's ability to higher level. If the
 - The input and output data schema and restrictions;
 - What the problem is, how to break it down, and how to solve it;
 - Starting from brute force approach, find duplicated or unnecessary operation and try to simplify it by better data structure and algorithm;
-- <b>Variables have clear semantics</b>, such as the pointer is inclusive or exclusive to current element, and what i, j, k stands for in for-loop;
+- <b>Variables have clear semantics</b>, such as the pointer is inclusive or exclusive to current element, and what i, j, k stands for in for-loop. Witch clear semantics for each variables, off-by-one errors can mostly avoid.
 - Improvement analysis based on TC & SC O(*).
 
 ### Rules for code
