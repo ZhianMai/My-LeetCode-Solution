@@ -33,7 +33,6 @@ These two questions are very similiar to answer:
 * Which part of the solution can run in parallel or multi-threaded?
 * If this part of the solution cannot run in parallel due to consistent state transfer, is it possible to change to parallelable implementation, like binary reduction, or k-way merge using heap?
 * If this part of the solution can run in parallel, how to minimize data transfer? 
-<br />
 
 ### Legacy
 I used to take notes on Google doc :link:[link](https://docs.google.com/document/d/19Kqqg7O1uSLHrBmcvUBuL8otUgsI0nNc3m3-W3wviXI/edit?usp=sharing), but that was not a very good choice, since it does not support code block. So I moved some of my notes to here.
