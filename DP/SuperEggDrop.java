@@ -36,9 +36,8 @@ class SuperEggDrop {
         high = mid - 1;
       }
     }
-
     dp[k][n] = result;
-
+    
     return result;
   }
 }

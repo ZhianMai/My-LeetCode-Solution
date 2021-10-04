@@ -33,7 +33,6 @@ class AddingTwoNumbers {
     if(tenLarger == 1){
       currentAnswerNode.next = new ListNode(1);
     }
-
     return answerHead.next;
   } // end addTwoNumbers()
 }

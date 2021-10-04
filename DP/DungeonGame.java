@@ -27,7 +27,6 @@ class DungeonGame {
 
       }
     }
-
     return dp[0][0];
   }
 }

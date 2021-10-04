@@ -20,7 +20,6 @@ class PairDividedBy60 {
         count += (modCount[i] * modCount[60 - i]);
       }
     }
-
     return count;
   }
 }

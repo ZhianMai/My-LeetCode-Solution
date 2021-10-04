@@ -26,7 +26,6 @@ class LongestCommonSubsequence {
         }
       }
     }
-
     return Math.max(dp[0][str2.length], dp[1][str2.length]);
   }
 }

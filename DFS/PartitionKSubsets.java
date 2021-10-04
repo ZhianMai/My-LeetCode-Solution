@@ -12,7 +12,6 @@ class PartitionKSubsets {
     if(sum % k != 0){
       return false; // Invalid input
     }
-
     return dfs(nums, sum / k, 0, 0, k);
   }
 
@@ -36,7 +35,6 @@ class PartitionKSubsets {
         nums[i] *= -1;
       }
     }
-
     return false;
   }
   

@@ -24,7 +24,6 @@ class BinarySearch {
         right = mid - 1;
       }
     }
-
     return -1;
   }
   
@@ -43,7 +42,6 @@ class BinarySearch {
         right = mid;
       }
     }
-
     return nums[left] == target ? left : -1;
   }
   
@@ -63,7 +61,6 @@ class BinarySearch {
         left = mid;
       }
     }
-
     return nums[left] == target ? left : -1;
   }
   

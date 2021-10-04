@@ -12,7 +12,6 @@ class PreorderInorderBuildingTree {
     for (int i = 0; i < inorder.length; i++) {
       inorderMap.put(inorder[i], i);
     }
-
     return helper(preorder, 0, preorder.length - 1, inorderMap, 0, inorder.length - 1);
   }
 
@@ -33,7 +32,6 @@ class PreorderInorderBuildingTree {
       root.right = helper(preorder, preLeft + inorderLeftLength + 1, preRight,
           inorder, inorderIdx + 1, inRight);
     }
-
     return root;
   }
 }

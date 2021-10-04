@@ -28,7 +28,6 @@ class NQueens {
     if (row == curr.length) {
       List<String> temp = printQueen(curr);
       result.add(temp);
-
       return;
     }
 
@@ -61,7 +60,6 @@ class NQueens {
       result.add(new String(queenRow));
       queenRow[i] = '.';
     }
-
     return result;
   }
 }

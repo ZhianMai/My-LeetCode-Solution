@@ -72,7 +72,6 @@ public int minCost(int n, int[] cuts) {
         }
       }
     }
-
     return dp[0][length - 1];
   }
 }

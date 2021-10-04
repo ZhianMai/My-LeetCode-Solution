@@ -16,7 +16,6 @@ class MultipleNodesDeletion {
     if (root != null) {
       forest.add(root);
     }
-
     return new LinkedList<>(forest);
   }
 

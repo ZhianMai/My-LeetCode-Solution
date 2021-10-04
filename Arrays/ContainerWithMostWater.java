@@ -17,7 +17,6 @@ class ContainerWithMostWater {
         right--;
       }
     }
-
     return result;
   }
 }

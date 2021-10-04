@@ -15,7 +15,6 @@ class JumpGame {
         }
       }
     }
-
     return dp[nums.length - 1];
   }
   
@@ -32,7 +31,6 @@ class JumpGame {
         }
       }
     }
-    
     return dp[0];
   }
   
@@ -47,7 +45,6 @@ class JumpGame {
 
       maxDist = Math.max(maxDist, nums[i] + i);
     }
-
     return true;
   }
   
@@ -60,7 +57,6 @@ class JumpGame {
         idxToEnd = i;
       }
     }
-
     return idxToEnd == 0;
   }
 }

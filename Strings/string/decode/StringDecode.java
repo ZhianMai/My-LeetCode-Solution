@@ -70,7 +70,6 @@ public class StringDecode {
         i = newIndex[0] + 1; // index skip over ')'
       }
     }
-
     return result.toString();
   }
 

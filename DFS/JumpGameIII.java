@@ -12,7 +12,6 @@ class JumpGameIII {
     if (arr[index] == 0) {
       return true;
     }
-    
     return canReach(arr, index + arr[index]) || canReach(arr, index - arr[index]);
   }
 }

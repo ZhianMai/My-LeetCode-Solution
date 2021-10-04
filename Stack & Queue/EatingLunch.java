@@ -23,7 +23,6 @@ class EatingLunch {
         return wantCircular;
       }
     }
-
     return 0;
   }
   
@@ -41,7 +40,6 @@ class EatingLunch {
         return wants[(i + 1) % 2];
       }
     }
-
     return 0;
   }
 }

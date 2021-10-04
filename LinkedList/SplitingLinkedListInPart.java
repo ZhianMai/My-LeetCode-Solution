@@ -30,7 +30,6 @@ class SplitingLinkedListInPart {
         prev.next = null;
       }
     }
-
     return result;
   }
 }
