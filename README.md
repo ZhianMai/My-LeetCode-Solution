@@ -2,7 +2,7 @@
 <br />
 
 <p align="center">
-  <img src="/%E5%81%9A%E9%A2%98.jpg" />
+  <img src="/Problem%20Solver.jpg" />
   <br />
   <i>Problem Solver</i>
 </p>
