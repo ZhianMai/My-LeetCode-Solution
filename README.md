@@ -110,21 +110,21 @@ When coding binary search, always remember three rules:
 
 - I summarized the rules of solving tree deserializing problems.
   - To build a tree, if for each tree node, one can confirm: <b>its value, AND the sets of node for its left and right subtree</b>, then the tree can be constructed.
-  - Pre-order traversal can confirm the value of current node, which is the first element, but cannot confirm sets of left and right subtrees. But if given the size of left or right subtree, then it can confirm the set of left and right subtrees.
-  - In-order traversal cannot confirm the value of current node. But if given the value of current node, it can confirm the set of left and right subtrees.
-  - Post-order traversal is similar to in-order traversal.
-  - Level-order traversal can confirm the value of current node, but cannot confirm the sets of left and right subtrees node. But if provide a list of left or right subtree nodes, then it can divide into left subtree level-order traversal and right subtree level-order traversal. This is the most difficult one of all tree desrializing problems.
+  - Pre-order traversal can confirm the value of current node, which is the first element, but cannot confirm sets of left and right subtrees' node. But if given the size of left or right subtree node set, then it can confirm the set of left and right subtrees' nodes.
+  - In-order traversal cannot confirm the value of current node. But if given the value of current node, it can confirm the set of left and right subtrees' nodes.
+  - Post-order traversal is similar to pre-order traversal.
+  - Level-order traversal can confirm the value of current node, but cannot confirm the sets of left and right subtrees' nodes. But if provided a list of left or right subtree's nodes, then it can divide into left subtree level-order traversal and right subtree level-order traversal. This is the most difficult one of all tree desrializing problems.
 
 - To build binary tree (including binary search tree) with:
-  - Pre-order and post-order. It cannot confirm each nodes left and right subtree sets, so the solution is not unique. Example: linked-list style tree has same in-order and post-order results.
-  - Pre-order and in-order. Get the node value from pre-order, than use it to split left subtree node set and right subtree node set from in-order. Tree can be built because two requirements are met.
+  - Pre-order and post-order. It cannot confirm each nodes left and right subtrees' node sets, so the solution is not unique. Example: linked-listed binary tree has same in-order and post-order results.
+  - Pre-order and in-order. Get the node value from pre-order, than use it to split left subtree's node set and right subtree's node set from in-order. Tree can be built because two requirements are met.
   - Post-order and in-order. Very similiar to the pre-order and in-order.
-  - Pre-order/Post-order and level-order. It's impossible, because the left and right subtrees set cannot be obtained from them.
-  - Level-order and in-order. Get the value of current node value, than use it to split left subtree node set and right subtree node set from in-order. Then use the subtree set to split level-order traversal into left subtree level-order and right subtree level-order traversal. <b>The current level-order traversal is merged from left subtree level-order and right subtree level-order traversal.</b>
+  - Pre-order/Post-order and level-order. It's impossible, because the left and right subtrees' node set cannot be obtained from them.
+  - Level-order and in-order. Get the value of current node value, than use it to split left subtree's node set and right subtree's node set from in-order. Then use the subtree's node set to split level-order traversal into left subtree level-order and right subtree level-order traversal. <b>The current level-order traversal is merged from left subtree level-order and right subtree level-order traversal.</b>
 
 - To build binary search tree with:
   - In-order traversal only. It cannot confirm the current value of the node, since it's a sorted array :(
-  - Pre-order, post-order, or level-order only. Recall the most important property of binary search tree: <b>for each node in binary search tree, all nodes in its left subtree are smaller than its value, and all nodes in its right subtree are larger than its value.</b> So the current root value can be obtained from any of these traversals, then use the BST property to split it into left and right subtree xx-order traversal.
+  - Pre-order, post-order, or level-order only. Recall the most important property of binary search tree: <b>for each node in binary search tree, all nodes in its left subtree are smaller than its value, and all nodes in its right subtree are larger than its value.</b> So the current root value can be obtained from any of these traversals, then use the BST property to split it into left and right subtrees' xx-order traversal.
 
 <br/>
 
