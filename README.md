@@ -9,7 +9,7 @@ This repo is a collection of some of my leetcode solutions. Many posted solution
 ### Rules for code
 My solution code will:
 * follow the Google Java Coding style guide (yes, indentation +2 spaces);
-* follw some items (rules) in the book <i>Effective Java</i>, such as:
+* follow some items (rules) in the book <i>Effective Java</i>, such as:
   * class name should be norn, whereas function name should be verb;
   * single method for single functionality;
   * function parameter list should not be too long;
