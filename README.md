@@ -166,7 +166,7 @@ When coding binary search, always remember three rules:
 
 #### DFS/PartitionKSubsets.java
   :link:[link](DFS/PartitionKSubsets.java)
-- Efficient DFS logic can significantly reduce the runtime.
+- I provided two ways to do DFS. It shows that efficient DFS logic can significantly reduce the runtime.
 
 <br />
 
