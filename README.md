@@ -5,6 +5,7 @@
 Consider LeetCode is an online gaming platform! Players are smart guys around the world, and the fun is to compete them on runtime ranking.
 
 This repo is a collection of some of my leetcode solutions. Many posted solutions on leetcode are with improper style or logic, making them less readable. So I would like to share my solution codes here.
+<br />
 
 ### Rules for code
 My solution code will:
@@ -20,6 +21,7 @@ But... this book is very thick, so I may violate some rules unintentionaly :(
 * be easy to read and understand with clear logic.
 
 I also appreciate Uncle Bob's saying: <i>good code can be understood without commenting.</i>
+<br />
 
 ### Follow-ups for problems
 For each solution, try to answer two follow-ups:
