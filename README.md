@@ -10,8 +10,16 @@
 ## Prologue
 Consider LeetCode is an online gaming platform! Players are smart guys around the world, and the fun is to compete them on runtime ranking.
 
-This repo is a collection of some of my leetcode solutions. Many posted solutions on leetcode are with improper style or logic, making them less readable. So I would like to share my solution codes here.
+This repo is a collection of some of my leetcode solutions. Many posted solutions on leetcode are with improper style or logic, making them less readable. So I would like to share my solution codes with some thoughts and analysis here.
 <br />
+
+### Problem-solving methodology
+Memorizing solution codes can hardly bring one's ability to higher level. If the problem is slightly modified, can the solution code still work? What I'm aiming for is to develop a strong problem analyzing and solving ability that can help solving new problems. This ability includes:
+- The input and output data schema and restrictions;
+- What the problem is, how to break it down, and how to solve it;
+- Starting from brute force approach, find duplicated or unnecessary operation and try to simplify it by better data structure and algorithm;
+- <b>Variables have clear semantics</b>, such as the pointer is inclusive or exclusive to current element, and what i, j, k stands for in for-loop;
+- Improvement analysis based on TC & SC O(*).
 
 ### Rules for code
 My solution code will:
