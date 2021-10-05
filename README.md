@@ -258,5 +258,19 @@ The last level should not do heavy work that requires TC or SC greater than O(n)
 ### Linked List
 <hr />
 
+
+#### LinkedList/MergingKLists.java
+  :link:[link](LinkedList/MergingKLists.java)
+  
+- This is a classical problem of k-input problems, like finding maximum / minimum / medinum from k arrays.
+- There're typcial three ways to approach these problems:
+  - Iteration each input;
+  - Binary reduction on each two inputs recursively (divide and conquer);
+  - Do them concurrently.
+
+- I included three ways to solve this problem using the three approaches above.
+
+<br />
+
 ## Epilogue
 Failure is like compile/runtime error, often comes first before getting success. If the first pass get success, then it indicates the problem is simple or I'm well-prepared. But all I need is that one success, and once I got it, the number of failure won't bother me anymore. Not being allowed to join the top level class does not mean my skill can not reach the top level forever, right?
