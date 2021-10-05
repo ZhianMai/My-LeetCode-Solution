@@ -68,7 +68,6 @@ class MergingKLists {
         }
       }
     }
-
     return lists[0];
   }
   
