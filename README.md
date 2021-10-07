@@ -141,6 +141,19 @@ When coding binary search, always remember three rules:
 
 <br/>
 
+#### Binary Tree/IncreasingBST.java
+  :link:[link](Binary%20Tree/IncreasingBST.java)
+- This is a classic binary tree turning to linked list problem. Similiar problems are pre-order/in-order/post-order linked list, with left/right child node pointer.
+- For good practice, try to modify existing node pointer to be a linked list instead of creating a new tree node object.
+- The general step (during the recursion):
+  - Keep track of the linked list tail;
+  - Record the left/right child node, then set left / right pointer null;
+  - Insert itself to the linked list tail, then update the tail;
+  - Traver the left / right subtree in certain order.
+  - If the linked list is preorder or postorder, then it may using pre-order and post-order to traverse.
+
+<br />
+
 <a name="d_f_s"></a>
 ### DFS
 <hr />
