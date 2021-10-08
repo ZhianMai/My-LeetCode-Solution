@@ -12,7 +12,7 @@ package string.decode;
 * If the number is multiple and from 10 - 26, it will end up with #(count), such as
 * 26#(9) -> 'zzzzzzzzz'
 *
-* Since I cannot  access the original problem, so I also wrote some Junit test for checking
+* Since I cannot access the original problem, so I also wrote some Junit test for checking
 * correctness.
 */
 public class StringDecode {
