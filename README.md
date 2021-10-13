@@ -86,6 +86,8 @@ When coding binary search, always remember three rules:
   - When the search space is about to exit the while loop, make sure it won't fall into infinite loop by testing:
     - no such target;
     - target placed at each index. 
+  - Time: O(logn), binary reduction.
+  - Space: O(1), constant, no recursion and no extra data structure needed.
   
 <br />
 
@@ -98,6 +100,8 @@ When coding binary search, always remember three rules:
   - i > j.  
 
 - then element a[i] can be found in a[n] using binary search.
+- Time: Find peak + search left + search right =  O(logn) * 3 = O(logn).
+- Space: O(1), constant, no recursion and no extra data structure needed.
 
 <br />
 
@@ -112,7 +116,8 @@ When coding binary search, always remember three rules:
   - What should I do?
   - What should I pass to children node? 
 - It seems that many such problems using post-order traversal is easier than pre-order traversal.
-
+- Time: O(n), need to traverse all nodes.
+- Space: recursion O(logn) (assuming balanced) + memory O(n) for worst case (delete all nodes) = O(n).
 <br />
 
 #### Binary Tree/PreorderInorderBuildingTree.java
@@ -138,7 +143,8 @@ When coding binary search, always remember three rules:
 - To build binary search tree with:
   - In-order traversal only. It cannot confirm the current value of the node, since it's a sorted array :(
   - Pre-order, post-order, or level-order only. Recall the most important property of binary search tree: <b>for each node in binary search tree, all nodes in its left subtree are smaller than its value, and all nodes in its right subtree are larger than its value.</b> So the current root value can be obtained from any of these traversals, then use the BST property to split it into left and right subtrees' xx-order traversal.
-
+- Time: O(n), need to traverse all nodes.
+- Space: recursion O(logn)(assuming balanced) + memory O(n) for indexing data.
 <br/>
 
 #### Binary Tree/IncreasingBST.java
@@ -151,7 +157,8 @@ When coding binary search, always remember three rules:
   - Insert itself to the linked list tail, then update the tail;
   - Traver the left / right subtree in certain order.
   - If the linked list is preorder or postorder, then it may using pre-order and post-order to traverse.
-
+- Time: O(n), need to traverse all nodes.
+- Space: recursion O(logn) (assuming balanced) + memory O(1).
 <br />
 
 <a name="d_f_s"></a>
@@ -170,24 +177,32 @@ The last level should not do heavy work that requires TC or SC greater than O(n)
   :link:[link](DFS/JumpGameIII.java)
 - One of my favorite solutions! In general, it needs a boolean[] to record what elements has been visited, but I marked the visited elements by flipping it negative instead of using a boolean[] array. Since the DFS needs to add and minus current element, so its mathematical symbol (+ or -) doesn't matter!
 - Unlike previous jump games, this time the game does not fall into DP category.
+- Time: O(n), each element visites at most once.
+- Space: recursion O(n) (worst case) + memory O(1).
 
 <br />
 
 #### DFS/CombinationSizeK.java
   :link:[link](DFS/CombinationSizeK.java)
 - For solving fixed-length output problems using back-tracking method, I prefer to use Java array, which is fixed-size, instead of mutable class, such as StringBuilder and List. I implemented it using both Java array methods and using ArrayList methods for performance testing. On my computer, for fixed k = 2, the performance threshold is n = 6200. Once n beyond 6200, the ArrayList method would significantly slow down, despite the fact that their runtime O() is the same.
+- Time: O((n - k)^k), recurse k times, each time has O(n - k) branches.
+- Space: recursion O(k) + memory O((n - k)^k).
 
 <br />
 
 #### DFS/GeneratingParentheses.java
   :link:[link](DFS/GeneratingParentheses.java)
 - Yes, I like DFS problem! I did not use StringBuilder here, and the total lines of code is only 13. It's easier to read and maintain. Since it gets rid of append-remove, the dfs method needs to know which index (or the depth of recursion tree) is currently traversing.
+- Time: O(2^2n) = O(4^n), recurse 2n times, each recursion is binary branches
+- Space: recursion O(n) + memory O(?)
 
 <br />
 
 #### DFS/PartitionKSubsets.java
   :link:[link](DFS/PartitionKSubsets.java)
 - I provided two ways to do DFS. It shows that efficient DFS logic can significantly reduce the runtime.
+- Time: O(n!)
+- Space: recursion O(n) + memory O(1)
 
 <br />
 
@@ -195,6 +210,8 @@ The last level should not do heavy work that requires TC or SC greater than O(n)
   :link:[link](DFS/NQueens.java)
 - N-queens, the most complicated problems I have had on LeetCode.
 - Use boolean tables to mark down placed queen position to support O(1) look up when placing new queen.
+- Time: O(n!).
+- Space: recursion O(n) + memroy O(?)
 
 <br/>
 
