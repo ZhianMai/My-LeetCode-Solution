@@ -219,6 +219,26 @@ The last level should not do heavy work that requires TC or SC greater than O(n)
 ### DP
 <hr />
 
+Dynamic programming is the most difficult part in all categories because:
+- the dimension of memo may be hard to decide;
+- the transition equation is hard to deduct.
+
+For DP memo, it can be:
+- constant number of variable, like fibo number, maximum subarray. And this is usually the optimal solution, which can downgrade to a 1D array.
+- 1D array, like jump game, maximum sum of ascending subsequence. And some 1D array is the optimal solution of 2D array, like min edit distance.
+- 2D array, like minimum cost cutting stick, knapsack problem.
+
+The transition equation, or how to fill-in the memo, it can be:
+- For constant number of variable memo:
+  - One iteration, like fibo number, maximum subarray, O(n) time;
+- For 1D array memo:
+  - One iteration. Usually this solution can optimize to constant number of variable, O(n) time.
+  - Look back all previous record, like maximum sum of ascending subsequence and min cut to palidrome dictionary, O(n^2) time.
+  - Look back some valid previous record, like jump game and max product of cutting rope, O(n^2) or O(n * k) time, where k depends on the problem.
+- For 2D array(m * n) memo:
+  - One iteration, where calculating dp[i][j] requires to look back fixed-number of record. Usually these solutions can optimize to constant number of 1D array, like min edit distance and moving a robot, O(n * m) time.
+  - Two iteration, where calculating dp[i][j] requires to look back multiple previous record, like min cost cutting stick and stone game, O(n* m * k) time, where k depends on the problem.
+
 #### DP/MinimumCostCuttingStick.java
   :link:[link](DP/MinimumCostCuttingStick.java)
 - This should be considred one of the most difficult problems in DP problem set! The main logic code has only 15 lines, but the comments are twice of it.
@@ -245,6 +265,34 @@ The last level should not do heavy work that requires TC or SC greater than O(n)
 - This problem can reduce the space complexcity to O(1) by using the input matrix as DP table. But modifying the input data is not a good practice (how if it's immutable?), and the logic is more complicated, since the DP form contains a dummy row and dummy column.
 
 <br/>
+
+#### DP/StockI.java
+  :link:[link](DP/StockI.java)
+- This is not a DP problem, but essential to the follwing prblems StockIII and StockIV.
+- The problem is finding the maximum profit of buying & selling exactlly one time. The solution is greedy algorithm.
+- Proof of correctness: suppose buying stock at price[i] and selling stock at price[j] (i < j) is the solution, then it guaranttes that no prices after price[i] is higher than price[j], and no prices between i and j has lower price than price[i], otherwise the solution is invalid.
+- Time: O(n)
+- Space: O(1)
+
+#### DP/StockII.java
+  :link:[link](DP/StockII.java)
+- This is not a DP problem, but essential to the follwing prblems StockIII and StockIV.
+- The problem is finding the maximum profit of buying & selling with unlimited time. The solution is greedy algorithm.
+- Proof of correctness: to maximum the revenue, one needs to buy-sell stocks at all ascending stock price moment, and don't buy-sell stocks at all descending stock price moment. So the sum of all ascending stock price difference is the solution.
+- Time: O(n)
+- Space: O(1)
+
+#### DP/StockIII.java
+  :link:[link](DP/StockIII.java)
+- The problem is finding the maximum profit of buying & selling with exactally two times. So learned from the StockI problem, the soluction can be finding the maximum profit of the first time trading, then finding the maximum profit of the second time trading.
+- Time: O(n)
+- Space: O(1)
+
+#### DP/StockIV.java
+  :link:[link](DP/StockIV.java)
+- The problem is finding the maximum profit of buying & selling with exactally k times, and it's a more general problem of StockIII. The induction role is the same: the current trading revenue depends on the previous trading revenue.
+- Time: O(n)
+- Space: O(k)
 
 <a name="stack_and_queue"></a>
 ### Stack and Queue
