@@ -284,7 +284,7 @@ The transition equation, or how to fill-in the memo, it can be:
 
 #### DP/StockIII.java
   :link:[link](DP/StockIII.java)
-- The problem is finding the maximum profit of buying & selling with exactally two times. So learned from the StockI problem, the soluction can be finding the maximum profit of the first time trading, then finding the maximum profit of the second time trading.
+- The problem is finding the maximum profit of buying & selling with exactally two times. So learned from the StockI problem, the solution can be finding the maximum profit of the first time trading, then finding the maximum profit of the second time trading.
 - Time: O(n)
 - Space: O(1)
 
