@@ -1,3 +1,6 @@
+/**
+ * Problem #124
+ */
 class MaximumPathSum {
   public int maxPathSum(TreeNode root) {
     int[] max = new int[]{Integer.MIN_VALUE};
