@@ -17,7 +17,7 @@ class FirstAndLastOccurence {
     int right = nums.length - 1;
     int result = -1;
     
-    while (left <= right) { // right if left > right
+    while (left <= right) { // end if left > right
       int mid = left + (right - left) / 2;
       
       if (nums[mid] == target) { // Update result
@@ -40,7 +40,7 @@ class FirstAndLastOccurence {
     int right = nums.length - 1;
     int result = -1;
     
-    while (left <= right) { // right if left > right
+    while (left <= right) { // end if left > right
       int mid = left + (right - left) / 2;
       
       if (nums[mid] == target) { // Update result
@@ -62,7 +62,7 @@ class FirstAndLastOccurence {
     int left = 0;
     int right = nums.length - 1;
 
-    while (left < right) { // right if left == right
+    while (left < right) { // end if left == right
       int mid = left + (right - left) / 2;
       
       if (nums[mid] > target) {
@@ -80,7 +80,7 @@ class FirstAndLastOccurence {
     int left = 0;
     int right = nums.length - 1;
     
-    while (left < right) { // right if left == right
+    while (left < right) { // end if left == right
       int mid = left + (right - left) / 2 + (right - left) % 2;
       
       if (nums[mid] > target) {
@@ -98,7 +98,7 @@ class FirstAndLastOccurence {
     int left = 0;
     int right = nums.length - 1;
 
-    while (left < right - 1) { // right if left == right - 1
+    while (left < right - 1) { // end if left == right - 1
       int mid = left + (right - left) / 2;
       
       if (nums[mid] > target) {
@@ -125,7 +125,7 @@ class FirstAndLastOccurence {
     int left = 0;
     int right = nums.length - 1;
 
-    while (left < right - 1) { // right if left == right - 1
+    while (left < right - 1) { // end if left == right - 1
       int mid = left + (right - left) / 2;
       
       if (nums[mid] > target) {
