@@ -102,6 +102,7 @@ class MedianOfTwoSortedArrays {
       }
     }
     
+    // Neither A nor B is empty 
     if (isOddLen) {
       return Math.min(numsA[aBegin], numsB[bBegin]);
     } else {
