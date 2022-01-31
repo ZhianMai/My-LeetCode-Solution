@@ -102,4 +102,32 @@ class NumberOfIslands {
       }
     }
   }
+  
+  public int numIslands3(char[][] grid) {
+    int rows = grid.length;
+    int cols = grid[0].length;
+    boolean[][] visited = new boolean[rows][cols];
+    int total = 0;
+    
+    for (int i = 0; i < rows; i++) {
+      for (int j = 0; j < cols; j++) {
+        if (grid[i][j] == '1' && !visited[i][j]) {
+          total++;
+          dfs(grid, visited, i, j);
+        }
+      }
+    }
+    return total;
+  }
+  
+  private void dfs(char[][] grid, boolean[][] visited, int i, int j) {
+    if (i >= 0 && i < grid.length && j >= 0 && j < grid[0].length &&
+        !visited[i][j] && grid[i][j] == '1') {
+      visited[i][j] = true;
+      
+      for (int[] dir : dirs) {
+        dfs(grid, visited, i + dir[0], j + dir[1]);
+      }
+    }
+  }
 }
