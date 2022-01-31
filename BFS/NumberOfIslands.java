@@ -61,4 +61,45 @@ class NumberOfIslands {
     set.remove(next);
     return next;
   }
+  
+  public int numIslands2(char[][] grid) {
+    int rows = grid.length;
+    int cols = grid[0].length;
+    boolean[][] visited = new boolean[rows][cols];
+    int total = 0;
+    
+    for (int i = 0; i < rows; i++) {
+      for (int j = 0; j < cols; j++) {
+        if (grid[i][j] == '1' && !visited[i][j]) {
+          total++;
+          bfs(grid, visited, i, j);
+        }
+      }
+    }
+    return total;
+  }
+  
+  private void bfs(char[][] grid, boolean[][] visited, int x, int y) {
+    int cols = grid[0].length;
+    Queue<Integer> queue = new LinkedList<>();
+    queue.add(x * cols + y);
+    
+    while (!queue.isEmpty()) {
+      int curr = queue.poll();
+      int currX = curr / cols;
+      int currY = curr % cols;
+      visited[currX][currY] = true;
+      
+      for (int[] dir : dirs) {
+        int nextX = currX + dir[0];
+        int nextY = currY + dir[1];
+        
+        if (nextX >= 0 && nextX < grid.length && nextY >= 0 && nextY < cols &&
+            !visited[nextX][nextY] && grid[nextX][nextY] == '1') {
+          queue.offer(nextX * cols + nextY);
+          visited[nextX][nextY] = true;
+        }
+      }
+    }
+  }
 }
